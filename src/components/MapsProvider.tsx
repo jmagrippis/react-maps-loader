@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Provider } from '../GoogleMapsContext';
+import { Provider } from '../MapsContext';
 
 interface Maps {
   Map: object;
@@ -26,7 +26,7 @@ interface State {
   googleMaps: Maps;
 }
 
-export class GoogleMapsProvider extends React.PureComponent<Props, State> {
+export class MapsProvider extends React.PureComponent<Props, State> {
   state = {
     googleMaps: window.google && window.google.maps
   };

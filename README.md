@@ -1,4 +1,4 @@
-# React GoogleMaps Loader
+# React Maps Loader
 
 Easily load and consume Google's [Maps JavaScript API].
 
@@ -7,29 +7,29 @@ Easily load and consume Google's [Maps JavaScript API].
 This library exports a Provider that will load the API for you and put it on the window. You'd probably want to use it somewhere around the root of your app, like so:
 
 ```js
-import { GoogleMapsProvider } from 'react-google-maps-loader';
+import { MapsProvider } from 'react-maps-loader';
 
 import App from './App'; // your beautiful app!
 
 const Root = () => (
-  <GoogleMapsProvider apiKey="YOUR_API_KEY" libraries={['places']}>
+  <MapsProvider apiKey="YOUR_API_KEY" libraries={['places']}>
     <App />
-  </GoogleMapsProvider>
+  </MapsProvider>
 );
 ```
 
 Somewhere nested inside the App component, you may have consumers that get the google.maps prop like so:
 
 ```js
-import { GoogleMapsConsumer } from 'react-google-maps-loader';
+import { MapsConsumer } from 'react-maps-loader';
 
 import EmbeddedMap from './EmbeddedMap';
 import MapContainer from './MapContainer';
 
 const Map = ({ place }) => (
-  <GoogleMapsConsumer>
-    {googleMaps =>
-      googleMaps ? (
+  <MapsConsumer>
+    {maps =>
+      maps ? (
         <EmbeddedMap
           containerElement={<MapContainer />}
           loadingElement={<div style={{ height: '100%' }} />}
@@ -40,7 +40,7 @@ const Map = ({ place }) => (
         <div>Loading!</div>
       )
     }
-  </GoogleMapsConsumer>
+  </MapsConsumer>
 );
 ```
 

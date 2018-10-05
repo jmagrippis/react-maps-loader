@@ -1,6 +1,6 @@
 {
-  "name": "react-google-maps-loader",
-  "version": "0.1.0",
+  "name": "react-maps-loader",
+  "version": "0.2.0",
   "description": "Easily load and consume Google's Maps JavaScript API",
   "main": "dist/index.js",
   "umd:main": "dist/index.umd.js",
@@ -11,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/jmagrippis/react-google-maps-loader"
+    "url": "https://github.com/jmagrippis/react-maps-loader"
   },
   "author": "Johnny Magrippis <j@magrippis.com>",
   "license": "MIT",

@@ -1,2 +1,2 @@
-export { Consumer as GoogleMapsConsumer } from './GoogleMapsContext';
-export { GoogleMapsProvider } from './components/GoogleMapsProvider';
+export { Consumer as MapsConsumer } from './MapsContext';
+export { MapsProvider } from './components/MapsProvider';
