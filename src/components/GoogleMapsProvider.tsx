@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { GoogleMapsContext } from './GoogleMapsContext';
+import { Provider } from '../GoogleMapsContext';
 
 interface Maps {
   Map: object;
@@ -60,9 +60,9 @@ export class GoogleMapsProvider extends React.PureComponent<Props, State> {
 
   render() {
     return (
-      <GoogleMapsContext.Provider value={this.state.googleMaps}>
+      <Provider value={this.state.googleMaps}>
         {React.Children.only(this.props.children)}
-      </GoogleMapsContext.Provider>
+      </Provider>
     );
   }
 }
