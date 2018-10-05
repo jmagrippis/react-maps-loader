@@ -2,8 +2,14 @@
   "name": "react-googlemaps-provider",
   "version": "0.1.0",
   "description": "Easily load and consume Google's Maps JavaScript API",
-  "main": "src/index.js",
-  "repository": "https://github.com/jmagrippis/react-googlemaps-provider",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmagrippis/react-googlemaps-provider"
+  },
   "author": "Johnny Magrippis <j@magrippis.com>",
   "license": "MIT",
   "private": false,
@@ -17,6 +23,14 @@
     "start": "webpack-dev-server",
     "build": "NODE_ENV=production webpack"
   },
+  "dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "peer-dependencies": {
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
@@ -29,9 +43,5 @@
     "webpack": "^4.20.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
-  },
-  "peer-dependencies": {
-    "react": "^16.5.2",
-    "react-dom": "^16.5.2"
   }
 }
