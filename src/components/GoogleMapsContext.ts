@@ -1,3 +1,3 @@
-import { createContext } from 'react';
+import * as React from 'react';
 
-export const GoogleMapsContext = createContext(null);
+export const GoogleMapsContext = React.createContext(null);
