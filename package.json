@@ -24,8 +24,11 @@
   ],
   "scripts": {
     "start": "microbundle --watch",
+    "startDemo": "node fuse",
     "build": "rm -rf dist && NODE_ENV=production microbundle",
-    "release": "standard-version"
+    "release": "standard-version",
+    "cypress": "cypress",
+    "test": "./scripts/test.sh"
   },
   "dependencies": {
     "react": "^16.5.2",
@@ -38,9 +41,12 @@
   "devDependencies": {
     "@types/react": "^16.4.14",
     "@types/react-dom": "^16.0.8",
+    "cypress": "^3.1.0",
+    "fuse-box": "^3.5.0",
     "microbundle": "^0.6.0",
     "prettier": "^1.14.3",
     "standard-version": "^4.4.0",
-    "typescript": "^3.1.1"
+    "typescript": "^3.1.1",
+    "wait-on": "^3.1.0"
   }
 }
